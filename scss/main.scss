@@ -1,0 +1,21 @@
+@use 'modules/reset';
+@use 'modules/fonts';
+@use 'modules/variables';
+
+@use 'particals/header';
+@use 'particals/latest-news';
+@use 'particals/destinations';
+
+body {
+    font-family: Lato, sans-serif;
+    background-color: #EDEFF0;
+}
+.main-wrapper {
+    background-color: variables.$Grey-100;
+    height: 475px;
+}
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}

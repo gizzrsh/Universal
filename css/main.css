@@ -1,0 +1,401 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Regular.woff2") format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lato;
+  src: url("../../fonts/Lato-Bold.woff2") format(woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../../fonts/RobotoSlab-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+.header {
+  font-size: 14px;
+}
+.header__top {
+  height: 50px;
+  color: #000000;
+}
+.header__top-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #BCBFC2;
+}
+.header__burger {
+  margin-right: 15px;
+}
+.header__sections {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: 700;
+  color: #262D33;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 626px;
+}
+.header__search button {
+  background: none;
+  border: none;
+}
+.header__search input {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: #939699;
+}
+.header .subscribe {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  gap: 10px;
+  margin-right: 65px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.header .subscribe__image {
+  position: relative;
+  width: 60px;
+  height: 41px;
+  border: 3px solid #BCBFC2;
+  border-bottom: none;
+}
+.header .subscribe__title {
+  font-weight: 700;
+  color: #262D33;
+  margin-bottom: 3px;
+}
+.header .subscribe__price {
+  color: #939699;
+}
+.header__login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #4B5157;
+}
+.header__center {
+  height: 84px;
+}
+.header__center-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__slogan {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 30px;
+  margin-right: 130px;
+}
+.header__slogan p {
+  color: #4B5157;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header__logo {
+  margin-right: 185px;
+}
+.header__time {
+  color: #4B5157;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 45px;
+}
+.header__weather {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4B5157;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header__bottom {
+  height: 55px;
+  align-content: center;
+  background-color: #262D33;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__link {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.latest-news {
+  padding: 30px 0px;
+}
+.latest-news__list {
+  display: flex;
+  background-color: #30363D;
+  border-radius: 9px;
+  padding: 25px 25px 30px;
+}
+.latest-news__item {
+  display: flex;
+  align-items: center;
+}
+.latest-news__item::after {
+  content: "";
+  height: 75px;
+  border-right: 1px solid #4B5157;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.latest-news__item:last-child::after {
+  margin: 0;
+  border: none;
+}
+.latest-news__title {
+  margin-right: 15px;
+}
+.latest-news__link {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  line-height: 25px;
+}
+.latest-news__img {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+}
+
+.destinations {
+  padding-bottom: 30px;
+}
+.destinations__container {
+  display: flex;
+}
+.destinations__article {
+  flex: 1 1 767px;
+  border-radius: 9px 0px 0px 9px;
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35) 0%, rgba(64, 48, 61, 0.35) 100%), url("../../img/destinations/destinations-bg.png") lightgray 50%/cover no-repeat;
+  background-size: cover;
+  padding: 55px 55px 100px 55px;
+}
+.destinations__recommended {
+  flex: 1 1 213px;
+  border-radius: 0px 9px 9px 0px;
+  background-color: #FFFFFF;
+}
+
+.article__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 138px;
+}
+.article__fullname {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5215686275);
+}
+.article__role {
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.2509803922);
+}
+.article__category {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #4592FF;
+  margin-bottom: 25px;
+}
+.article__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.article__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.article__button--read {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #4592FF;
+  padding: 10px 25px;
+}
+.article__button--video {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+}
+.article__button--video span {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5215686275);
+}
+.article__button--video time {
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.2509803922);
+}
+.article__button--video::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  background-image: url("../../img/icons/destinations/circle.svg");
+}
+.article__button--video::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-left: 17.5px;
+  background-image: url("../../img/icons/destinations/arrow.svg");
+}
+
+.recommended__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #262D33;
+  border-bottom: 1px solid #D9DADB;
+  padding: 20px 25px;
+}
+.recommended__item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  border-bottom: 1px solid #D9DADB;
+  cursor: pointer;
+}
+.recommended__item:last-child {
+  border: none;
+}
+.recommended__item--active {
+  position: relative;
+  background-color: #F5F5F5;
+}
+.recommended__item--active::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 238px;
+  display: inline-block;
+  border: 12px solid transparent;
+  border-right: 12px solid #F5F5F5;
+}
+.recommended__category {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #4592FF;
+  margin-bottom: 8px;
+}
+.recommended__name {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  background-color: #EDEFF0;
+}
+
+.main-wrapper {
+  background-color: #262D33;
+  height: 475px;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,133 @@
+@use '../modules/variables';
+
+
+// header
+.header {
+    font-size: 14px;
+    // header__top
+    &__top {
+        height: 50px;
+        color: #000000;
+    }
+    &__top-wrapper {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid variables.$Grey-30;
+    }
+    &__burger {
+        margin-right: 15px;
+    }
+    &__sections {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-weight: 700;
+        color: variables.$Grey-100;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        margin-right: 626px;
+        button {
+            background: none;
+            border: none;
+        }
+        input {
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            color: variables.$Grey-50;
+        }
+    }
+    .subscribe {
+        display: flex;
+        align-items: center;
+        align-self: flex-end;
+        gap: 10px;
+        margin-right: 65px;
+        font-size: 12px;
+        text-decoration: none;
+        &__image {
+            position: relative;
+            width: 60px;
+            height: 41px;
+            border: 3px solid variables.$Grey-30;
+            border-bottom: none;
+        }
+        &__title {
+            font-weight: 700;
+            color: variables.$Grey-100;
+            margin-bottom: 3px;
+        }
+        &__price {
+            color: variables.$Grey-50;
+        }
+    }
+    &__login {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: variables.$Grey-85;
+    }
+    // header__center
+    &__center {
+        height: 84px;
+    }
+    &__center-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__slogan {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 30px;
+        margin-right: 130px;
+        p {
+            color: variables.$Grey-85;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &__logo {
+        margin-right: 185px;
+    }
+    &__time {
+        color: variables.$Grey-85;
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 45px;
+    }
+    &__weather {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: variables.$Grey-85;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    // header__bottom
+    &__bottom {
+        height: 55px;
+        align-content: center;
+        background-color: variables.$Grey-100;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+    }
+
+}

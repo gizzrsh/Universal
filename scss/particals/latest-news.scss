@@ -1,0 +1,47 @@
+@use '../modules/variables';
+
+.latest-news {
+    padding: 30px 0px;
+		&__list {
+            display: flex;
+            background-color: variables.$Grey-95;
+            border-radius: 9px;
+            padding: 25px 25px 30px;
+		}
+
+		&__item {
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content: '';
+                height: 75px;
+                border-right: 1px solid variables.$Grey-85;
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+            &:last-child::after {
+                margin: 0;
+                border: none;
+            }
+		}
+
+        &__title {
+            margin-right: 15px;
+        }
+        
+		&__link {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            line-height: 25px;
+		}
+        
+        &__img {
+            width: 65px;
+            height: 65px;
+            flex-shrink: 0;
+        }
+}
