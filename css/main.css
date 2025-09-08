@@ -1,3 +1,7 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -92,17 +96,14 @@ table {
   display: flex;
   align-items: center;
   margin-left: 25px;
-  margin-right: 626px;
+  margin-right: 625px;
 }
 .header__search button {
   background: none;
   border: none;
 }
 .header__search input {
-  width: 100%;
-  border: none;
-  background: none;
-  outline: none;
+  width: 50px;
   color: #939699;
 }
 .header .subscribe {
@@ -336,6 +337,9 @@ table {
   background-image: url("../../img/icons/destinations/arrow.svg");
 }
 
+.recommended {
+  flex: 0 1 263px;
+}
 .recommended__title {
   font-size: 14px;
   font-weight: 700;
@@ -380,6 +384,68 @@ table {
 .recommended__name {
   font-size: 14px;
   line-height: 20px;
+}
+
+.selection {
+  padding-bottom: 60px;
+}
+.selection__container {
+  display: grid;
+  grid-template-columns: 1fr 263px;
+  gap: 29px;
+}
+.selection__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+.selection__content-top {
+  display: grid;
+  grid-template-columns: 1fr 263px;
+  grid-template-rows: 370px;
+  gap: 29px;
+}
+.selection__article {
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 9px;
+  padding: 20px 25px;
+}
+.selection__content-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 263px);
+  gap: 29px;
+}
+.selection__article--animal {
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1/span 2;
+}
+.selection__article--medicine {
+  height: 170px;
+  grid-column: 2;
+  grid-row: 2;
+}
+.selection__article--travel {
+  height: 170px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.selection__article--manufacture {
+  height: 170px;
+  grid-column: 3;
+  grid-row: 1;
+}
+.selection__article--food {
+  height: 170px;
+  grid-column: 3;
+  grid-row: 2;
+}
+.selection__quotes {
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 9px;
+  padding: 20px 25px;
 }
 
 body {

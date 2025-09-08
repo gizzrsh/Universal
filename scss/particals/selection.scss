@@ -1,0 +1,81 @@
+.selection {
+    padding-bottom: 60px;
+		&__container {
+            display: grid;
+            grid-template-columns: 1fr 263px;
+            gap: 29px;
+		}
+
+		&__content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 29px;
+		}
+
+		&__content-top {
+            display: grid;
+            grid-template-columns: 1fr 263px;
+            grid-template-rows: 370px;
+            gap: 29px;
+		}
+
+		&__article {
+            color: #FFFFFF;
+            background-color: #000000;
+            border-radius: 9px;
+
+            padding: 20px 25px;
+		}
+
+		&__article--cars {
+		}
+
+		&__article--popular {
+		}
+
+		&__content-bottom {
+            display: grid;
+            grid-template-columns: repeat(3, 263px);
+            gap: 29px;
+		}
+
+		&__article--animal {
+            height: 100%;
+            grid-column: 1;
+            grid-row: 1 / span 2;
+		}
+
+        &__article--medicine {
+            height: 170px;
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+		&__article--travel {
+            height: 170px;
+            grid-column: 2;
+            grid-row: 1;
+		}
+
+		&__article--manufacture {
+            height: 170px;
+            grid-column: 3;
+            grid-row: 1;
+		}
+
+        &__article--food {
+            height: 170px;
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+		&__quotes {
+            color: #FFFFFF;
+            background-color: #000000;
+            border-radius: 9px;
+
+            padding: 20px 25px;
+		}
+}
+.container {
+}
